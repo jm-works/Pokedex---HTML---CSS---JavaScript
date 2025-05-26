@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="stylesheet" href="./assets/style/style.css">
+  <link rel="shortcut icon" type="imagex/png" href="./assets/img/valor.png">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <script src="./assets/script/script.js"></script>
+
+  <title>Pokédex</title>
+
+</head>
+<body>
+
+  <!-- main da pokedex -->
+  <div class="pokedex">
+    <div class="luzinha"></div>
+    <div class="tela-pokedex">
+
+      <!-- imagem do pokemon -->
+      <div class="sprite">
+        <img id="pokemon-img" src="" alt="Imagem do Pokémon" />
+      </div>
+
+      <!-- informacao do pokemon -->
+      <div class="info">
+        <h2 id="nome-pokemon">Nome</h2>
+        <div class="id" id="id-pokemon">#000</div>
+        <div class="tipos" id="tipos-pokemon"></div>
+      </div>
+
+      <!-- detalhes -->
+      <div class="detalhes">
+        <p><strong>Altura:</strong> <span id="altura-pokemon">--</span></p>
+        <p><strong>Peso:</strong> <span id="peso-pokemon">--</span></p>
+        <p><strong>Habilidades:</strong> <span id="habilidades-pokemon">--</span></p>
+      </div>
+
+      <!-- descricao do pokemon -->
+      <div class="descricao">
+        <p><strong>Descrição:</strong> <span id="descricao-pokemon">--</span></p>
+      </div>
+
+      <!-- status do pokemon -->
+      <div class="status-pokemon">
+
+        <!-- status de vida -->
+        <div class="status">
+          <label>HP</label>
+          <div class="barra-container"><div class="barra" id="status-hp"></div></div>
+        </div>
+
+        <!-- status de ataque -->
+        <div class="status">
+          <label>ATK</label>
+          <div class="barra-container"><div class="barra" id="status-atk"></div></div>
+        </div>
+
+        <!-- status de defesa -->
+        <div class="status">
+          <label>DEF</label>
+          <div class="barra-container"><div class="barra" id="status-def"></div></div>
+        </div>
+
+        <!-- status de velocidade -->
+        <div class="status">
+          <label>SPD</label>
+          <div class="barra-container"><div class="barra" id="status-spd"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- barra de pesquisa -->
+    <div class="pesquisa">
+      <input type="text" id="pesquisar" placeholder="Nome ou ID">
+      <button onclick="buscarPokemon()">Buscar</button>
+    </div>
+  </div>
+</body>
+</html>
